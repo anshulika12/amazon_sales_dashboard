@@ -1,0 +1,3675 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.23.0623.1711                               -->
+<workbook original-version='18.1' source-build='2022.1.15 (20221.23.0623.1711)' source-platform='mac' version='18.1' xml:base='https://vizhub' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN?rev=1.0' id='AmazonSalesIN' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Amazon Sale Report' inline='true' name='federated.1eswkut1k03ef3135ggns0cj4kmj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Amazon Sale Report' name='textscan.0edeis01i1xrxr1a5532w0kdhjls'>
+            <connection class='textscan' directory='D:/Courses_Files/Data_Analyst_Files_&amp;_Resources/tableau_files/tableau_projects_&amp;_files/Amazon_sales_IN' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0edeis01i1xrxr1a5532w0kdhjls' name='Amazon Sale Report.csv' table='[Amazon Sale Report#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='Status' ordinal='3' />
+            <column datatype='string' name='Fulfilment' ordinal='4' />
+            <column datatype='string' name='Sales Channel ' ordinal='5' />
+            <column datatype='string' name='ship-service-level' ordinal='6' />
+            <column datatype='string' name='Style' ordinal='7' />
+            <column datatype='string' name='SKU' ordinal='8' />
+            <column datatype='string' name='Category' ordinal='9' />
+            <column datatype='string' name='Size' ordinal='10' />
+            <column datatype='string' name='ASIN' ordinal='11' />
+            <column datatype='string' name='Courier Status' ordinal='12' />
+            <column datatype='integer' name='Qty' ordinal='13' />
+            <column datatype='string' name='currency' ordinal='14' />
+            <column datatype='real' name='Amount' ordinal='15' />
+            <column datatype='string' name='ship-city' ordinal='16' />
+            <column datatype='string' name='ship-state' ordinal='17' />
+            <column datatype='real' name='ship-postal-code' ordinal='18' />
+            <column datatype='string' name='ship-country' ordinal='19' />
+            <column datatype='string' name='promotion-ids' ordinal='20' />
+            <column datatype='boolean' name='B2B' ordinal='21' />
+            <column datatype='string' name='fulfilled-by' ordinal='22' />
+            <column datatype='string' name='Unnamed: 22' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0edeis01i1xrxr1a5532w0kdhjls' name='Amazon Sale Report.csv' table='[Amazon Sale Report#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='index' ordinal='0' />
+            <column datatype='string' name='Order ID' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='Status' ordinal='3' />
+            <column datatype='string' name='Fulfilment' ordinal='4' />
+            <column datatype='string' name='Sales Channel ' ordinal='5' />
+            <column datatype='string' name='ship-service-level' ordinal='6' />
+            <column datatype='string' name='Style' ordinal='7' />
+            <column datatype='string' name='SKU' ordinal='8' />
+            <column datatype='string' name='Category' ordinal='9' />
+            <column datatype='string' name='Size' ordinal='10' />
+            <column datatype='string' name='ASIN' ordinal='11' />
+            <column datatype='string' name='Courier Status' ordinal='12' />
+            <column datatype='integer' name='Qty' ordinal='13' />
+            <column datatype='string' name='currency' ordinal='14' />
+            <column datatype='real' name='Amount' ordinal='15' />
+            <column datatype='string' name='ship-city' ordinal='16' />
+            <column datatype='string' name='ship-state' ordinal='17' />
+            <column datatype='real' name='ship-postal-code' ordinal='18' />
+            <column datatype='string' name='ship-country' ordinal='19' />
+            <column datatype='string' name='promotion-ids' ordinal='20' />
+            <column datatype='boolean' name='B2B' ordinal='21' />
+            <column datatype='string' name='fulfilled-by' ordinal='22' />
+            <column datatype='string' name='Unnamed: 22' ordinal='23' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[index]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Status]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Status</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fulfilment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fulfilment]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Fulfilment</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sales Channel </remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Sales Channel ]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Sales Channel </remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship-service-level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ship-service-level]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ship-service-level</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Style</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Style]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Style</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SKU</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SKU]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>SKU</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Size]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Size</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASIN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ASIN]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ASIN</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Courier Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Courier Status]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Courier Status</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Qty</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Qty]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Qty</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currency</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[currency]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>currency</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Amount</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Amount]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Amount</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship-city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ship-city]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ship-city</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship-state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ship-state]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ship-state</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship-postal-code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ship-postal-code]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ship-postal-code</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ship-country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ship-country]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>ship-country</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>promotion-ids</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[promotion-ids]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>promotion-ids</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>B2B</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[B2B]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>B2B</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fulfilled-by</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fulfilled-by]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>fulfilled-by</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 22</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Unnamed: 22]</local-name>
+            <parent-name>[Amazon Sale Report.csv]</parent-name>
+            <remote-alias>Unnamed: 22</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Asin' datatype='string' name='[ASIN]' role='dimension' type='nominal' />
+      <column caption='Currency1' datatype='string' name='[Calculation_1090434110121631746]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Currency&quot;' />
+      </column>
+      <column caption='Total Quantity1' datatype='string' name='[Calculation_1090434110122840067]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Quantity&quot;' />
+      </column>
+      <column caption='Total Amount' datatype='string' name='[Calculation_1090434110123204612]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Amount&quot;' />
+      </column>
+      <column caption='Total Sizes' datatype='string' name='[Calculation_1090434110123409413]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Sizes&quot;' />
+      </column>
+      <column caption='Total Categories' datatype='string' name='[Calculation_1090434110123847687]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Categories&quot;' />
+      </column>
+      <column caption='Total Products' datatype='string' name='[Calculation_1090434110124195848]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;Total Products&quot;' />
+      </column>
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Courier Status]' role='dimension' type='nominal' />
+      <column caption='Sales Channel' datatype='string' name='[Sales Channel ]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Amazon Sale Report.csv' datatype='table' name='[__tableau_internal_object_id__].[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]' role='measure' type='quantitative' />
+      <column caption='Currency' datatype='string' name='[currency]' role='dimension' type='nominal' />
+      <column caption='Fulfilled-By' datatype='string' name='[fulfilled-by]' role='dimension' type='nominal' />
+      <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
+      <column caption='Promotion-Ids' datatype='string' name='[promotion-ids]' role='dimension' type='nominal' />
+      <column caption='Ship-City' datatype='string' name='[ship-city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Ship-Country' datatype='string' name='[ship-country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Ship-Postal-Code' datatype='real' name='[ship-postal-code]' role='measure' type='quantitative' />
+      <column caption='Ship-Service-Level' datatype='string' name='[ship-service-level]' role='dimension' type='nominal' />
+      <column caption='Ship-State' datatype='string' name='[ship-state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[Calculation_1090434110121631746]' derivation='None' name='[none:Calculation_1090434110121631746:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Courier Status]' derivation='None' name='[none:Courier Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[currency]' derivation='None' name='[none:currency:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ship-service-level]' derivation='None' name='[none:ship-service-level:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ship-state]' derivation='None' name='[none:ship-state:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[Exclusions (Currency,Currency1)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[none:currency:nk]' />
+          <groupfilter function='level-members' level='[none:Calculation_1090434110121631746:nk]' />
+        </groupfilter>
+      </group>
+      <drill-paths>
+        <drill-path name='ship-country, ship-state, ship-city'>
+          <field>[ship-country]</field>
+          <field>[ship-state]</field>
+          <field>[ship-city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_13xs4711rm5q8n14ytrk41cly4wy.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/22/2023 07:04:11 AM' username=''>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>index</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>index</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128975</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>128975</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>101</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Status</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fulfilment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fulfilment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fulfilment</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sales Channel </remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sales Channel ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sales Channel </remote-alias>
+              <ordinal>5</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ship-service-level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ship-service-level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ship-service-level</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Style</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Style]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Style</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3092</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SKU</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SKU]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SKU</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12192</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Size</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ASIN</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ASIN]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ASIN</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12102</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Courier Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Courier Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Courier Status</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Qty</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Qty]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Qty</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currency</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[currency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>currency</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Amount</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Amount]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Amount</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2058</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ship-city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ship-city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ship-city</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4719</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ship-state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ship-state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ship-state</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ship-postal-code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ship-postal-code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ship-postal-code</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10022</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ship-country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ship-country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ship-country</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>promotion-ids</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[promotion-ids]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>promotion-ids</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7262</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>B2B</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[B2B]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>B2B</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fulfilled-by</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fulfilled-by]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fulfilled-by</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unnamed: 22</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Unnamed: 22]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unnamed: 22</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Amazon Sale Report.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:ship-state:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;ASSAM&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;KERALA&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pondicherry&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;UTTARAKHAND&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nagaland&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Rajsthan&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AR&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;HIMACHAL PRADESH&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Odisha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;TAMIL NADU&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MAHARASHTRA&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Punjab&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;BIHAR&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;LADAKH&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Puducherry&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;WEST BENGAL&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;JAMMU &amp; KASHMIR&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;orissa&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;TELANGANA&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Delhi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;MIZORAM&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rajshthan&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ANDAMAN &amp; NICOBAR&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;GOA&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New Delhi&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;RJ&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;delhi&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MEGHALAYA&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;RAJASTHAN&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ARUNACHAL PRADESH&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;JHARKHAND&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Orissa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;TRIPURA&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CHANDIGARH&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Manipur&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;PUNJAB&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CHHATTISGARH&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MANIPUR&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Punjab/Mohali/Zirakpur&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;DELHI&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mizoram&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;goa&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;NAGALAND&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;rajsthan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bihar&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;LAKSHADWEEP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;PUDUCHERRY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Arunachal pradesh&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;KARNATAKA&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;PB&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;UTTAR PRADESH&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ANDHRA PRADESH&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Gujarat&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NL&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SIKKIM&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;DADRA AND NAGAR&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Meghalaya&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;rajasthan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;bihar&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;MADHYA PRADESH&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;punjab&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;APO&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;HARYANA&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ODISHA&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sikkim&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:ship-service-level:nk]' palette='gray_10_0' type='palette'>
+            <map to='#616c77'>
+              <bucket>&quot;Expedited&quot;</bucket>
+            </map>
+            <map to='#acb0b1'>
+              <bucket>&quot;Standard&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Status:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Shipped - Picked Up&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shipped&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Shipping&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Shipped - Rejected by Buyer&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Shipped - Delivered to Buyer&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Shipped - Lost in Transit&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Pending&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Shipped - Damaged&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Shipped - Returned to Seller&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Cancelled&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Shipped - Out for Delivery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pending - Waiting for Pick Up&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Shipped - Returning to Seller&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Category:nk]' palette='blue_red_brown_10_0' type='palette'>
+            <map to='#3896c4'>
+              <bucket>&quot;Set&quot;</bucket>
+            </map>
+            <map to='#466f9d'>
+              <bucket>&quot;Blouse&quot;</bucket>
+            </map>
+            <map to='#91b3d7'>
+              <bucket>&quot;Bottom&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;kurta&quot;</bucket>
+            </map>
+            <map to='#a0d4ee'>
+              <bucket>&quot;Top&quot;</bucket>
+            </map>
+            <map to='#ba7e45'>
+              <bucket>&quot;Western Dress&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Saree&quot;</bucket>
+            </map>
+            <map to='#ed444a'>
+              <bucket>&quot;Dupatta&quot;</bucket>
+            </map>
+            <map to='#feb5a2'>
+              <bucket>&quot;Ethnic Dress&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Courier Status:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Unshipped&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Shipped&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cancelled&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Amazon Sale Report.csv' id='Amazon Sale Report.csv_4B49CD250B1B47D8B8A91AF55140DDED'>
+            <properties context=''>
+              <relation connection='textscan.0edeis01i1xrxr1a5532w0kdhjls' name='Amazon Sale Report.csv' table='[Amazon Sale Report#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='index' ordinal='0' />
+                  <column datatype='string' name='Order ID' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='string' name='Status' ordinal='3' />
+                  <column datatype='string' name='Fulfilment' ordinal='4' />
+                  <column datatype='string' name='Sales Channel ' ordinal='5' />
+                  <column datatype='string' name='ship-service-level' ordinal='6' />
+                  <column datatype='string' name='Style' ordinal='7' />
+                  <column datatype='string' name='SKU' ordinal='8' />
+                  <column datatype='string' name='Category' ordinal='9' />
+                  <column datatype='string' name='Size' ordinal='10' />
+                  <column datatype='string' name='ASIN' ordinal='11' />
+                  <column datatype='string' name='Courier Status' ordinal='12' />
+                  <column datatype='integer' name='Qty' ordinal='13' />
+                  <column datatype='string' name='currency' ordinal='14' />
+                  <column datatype='real' name='Amount' ordinal='15' />
+                  <column datatype='string' name='ship-city' ordinal='16' />
+                  <column datatype='string' name='ship-state' ordinal='17' />
+                  <column datatype='real' name='ship-postal-code' ordinal='18' />
+                  <column datatype='string' name='ship-country' ordinal='19' />
+                  <column datatype='string' name='promotion-ids' ordinal='20' />
+                  <column datatype='boolean' name='B2B' ordinal='21' />
+                  <column datatype='string' name='fulfilled-by' ordinal='22' />
+                  <column datatype='string' name='Unnamed: 22' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Amount by week &amp; category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935460?rev=' id='Amountbyweekcategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount]' derivation='Sum' name='[sum:Amount:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+            <format attr='title' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Amount:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Amount:qk]</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[twk:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{03795A95-C87D-4C2A-9ED8-0AE7C9455674}' />
+    </worksheet>
+    <worksheet name='B2B Sales Quantity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935466?rev=' id='B2BSalesQuantity' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='boolean' name='[B2B]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[B2B]' derivation='None' name='[none:B2B:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[pcto:sum:Qty:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='40' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='height' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:B2B:nk]' value='30' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' palette='gray_warm_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' palette='gray_warm_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:B2B:nk]</cols>
+      </table>
+      <simple-id uuid='{0FBBCA5E-9108-481B-89FC-4C942B98E66E}' />
+    </worksheet>
+    <worksheet name='Currency'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935467?rev=' id='Currency' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='Currency1' datatype='string' name='[Calculation_1090434110121631746]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Currency&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column caption='Currency' datatype='string' name='[currency]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1090434110121631746]' derivation='None' name='[none:Calculation_1090434110121631746:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[currency]' derivation='None' name='[none:currency:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[Exclusions (Currency,Currency1)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[none:currency:nk]' />
+                <groupfilter function='level-members' level='[none:Calculation_1090434110121631746:nk]' />
+              </groupfilter>
+              <groupfilter function='reorder-dimensionality'>
+                <groupfilter function='union'>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:Calculation_1090434110121631746:nk]' member='&quot;Currency&quot;' />
+                    <groupfilter function='member' level='[none:currency:nk]' member='%null%' />
+                  </groupfilter>
+                  <groupfilter function='crossjoin'>
+                    <groupfilter function='member' level='[none:Calculation_1090434110121631746:nk]' member='&quot;Currency&quot;' />
+                    <groupfilter function='member' level='[none:currency:nk]' member='&quot;INR&quot;' />
+                  </groupfilter>
+                </groupfilter>
+                <order>
+                  <hierarchy name='[none:currency:nk]' />
+                  <hierarchy name='[none:Calculation_1090434110121631746:nk]' />
+                </order>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[Exclusions (Currency,Currency1)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='86' />
+            <format attr='height' value='46' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110121631746:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:currency:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0DF7A754-7B39-42CF-AC41-93B58F4389B8}' />
+    </worksheet>
+    <worksheet name='Map Qty by State'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='11'>Map Quantity by state</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935458?rev=' id='MapQtybyState' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ship-country]' derivation='None' name='[none:ship-country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ship-state]' derivation='None' name='[none:ship-state:nk]' pivot='key' type='nominal' />
+            <column caption='Ship-Country' datatype='string' name='[ship-country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column caption='Ship-State' datatype='string' name='[ship-state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[Latitude (generated)]' included-values='non-null' />
+          <filter class='quantitative' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[Longitude (generated)]' included-values='non-null' />
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[Latitude (generated)]</column>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[Longitude (generated)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' palette='red_green_gold_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' value='false' />
+            <format attr='break-on-special' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' value='false' />
+            <format attr='show-null-value-warning' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' value='false' />
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' />
+              <lod column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-country:nk]' />
+              <lod column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' />
+              <geometry column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eswkut1k03ef3135ggns0cj4kmj].[Latitude (generated)]</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{326346BC-333F-4861-9272-F7CD3D9AE124}' />
+    </worksheet>
+    <worksheet name='Quantity by Courier Status &amp; Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935464?rev=' id='QuantitybyCourierStatusCategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='0' datatype='integer' name='[Calculation_1090434110119817217]' role='measure' type='quantitative' user:unnamed='Quantity by Courier Status &amp; Category'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Courier Status]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Courier Status]' derivation='None' name='[none:Courier Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[pcto:sum:Qty:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Calculation_1090434110119817217]' derivation='Sum' name='[sum:Calculation_1090434110119817217:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Courier Status:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Courier Status:nk]' />
+              <groupfilter function='member' level='[none:Courier Status:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Courier Status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk]' scope='rows' value='false' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Courier Status:nk]' />
+              <wedge-size column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Courier Status:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.7471270561218262' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-color' value='#ffaa00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk] + [federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Calculation_1090434110119817217:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{B923055E-56B0-43C2-A3D1-83B7B0ADD079}' />
+    </worksheet>
+    <worksheet name='Quantity by Sales channel &amp; Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935465?rev=' id='QuantitybySaleschannelCategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column caption='Sales Channel' datatype='string' name='[Sales Channel ]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Sales Channel ]' derivation='None' name='[none:Sales Channel :nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[pcto:sum:Qty:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='level-members' level='[none:Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='62' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+            <format attr='height' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Sales Channel :nk]' value='38' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' palette='gray_warm_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' palette='gray_warm_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[pcto:sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Sales Channel :nk]</cols>
+      </table>
+      <simple-id uuid='{312E748C-390D-4A1A-8243-6E7C47F17119}' />
+    </worksheet>
+    <worksheet name='Quantity by Status &amp; Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935463?rev=' id='QuantitybyStatusCategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Status]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Status]' derivation='None' name='[none:Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Status:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' scope='cols' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Status:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Status:nk]</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]</cols>
+      </table>
+      <simple-id uuid='{5C63346E-BA0C-4801-952B-DCFDB2B92D05}' />
+    </worksheet>
+    <worksheet name='Quantity by size &amp; category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935461?rev=' id='Quantitybysizecategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Size]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Size]' derivation='None' name='[none:Size:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Size:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' scope='cols' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Size:nk]</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]</cols>
+      </table>
+      <simple-id uuid='{1047FA82-13A6-4F57-B876-2072DF05963A}' />
+    </worksheet>
+    <worksheet name='Quantity by week &amp; category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935459?rev=' id='Quantitybyweekcategory' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Week-Trunc' name='[twk:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' scope='rows' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[twk:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{95D52E89-B1D7-4BA2-8602-FFC18232E212}' />
+    </worksheet>
+    <worksheet name='Top 10 states by Quantity&amp; Category - Ship service level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='9'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935462?rev=' id='Top10statesbyQuantityCategory-Shipservicelevel' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ship-service-level]' derivation='None' name='[none:ship-service-level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ship-state]' derivation='None' name='[none:ship-state:nk]' pivot='key' type='nominal' />
+            <column caption='Ship-Service-Level' datatype='string' name='[ship-service-level]' role='dimension' type='nominal' />
+            <column caption='Ship-State' datatype='string' name='[ship-state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Qty])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:ship-state:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]' direction='DESC' measure-to-sort-by='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk]</column>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' scope='cols' value='' />
+            <format attr='stroke-color' value='#000000' />
+            <format attr='tick-color' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#000000' />
+            <format attr='stroke-color' scope='cols' value='#000000' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-service-level:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-markers-mode' value='all' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-state:nk] / [federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-service-level:nk])</rows>
+        <cols>[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]</cols>
+      </table>
+      <simple-id uuid='{105341D1-DF47-4B87-85FB-8BDED0CE6A27}' />
+    </worksheet>
+    <worksheet name='Total Amount'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935469?rev=' id='TotalAmount' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column datatype='real' name='[Amount]' role='measure' type='quantitative' />
+            <column caption='Total Amount' datatype='string' name='[Calculation_1090434110123204612]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Amount&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1090434110123204612]' derivation='None' name='[none:Calculation_1090434110123204612:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Amount]' derivation='Sum' name='[sum:Amount:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='109' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='62' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110123204612:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Amount:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{71BF709B-D003-47B4-96FF-A22D99671A71}' />
+    </worksheet>
+    <worksheet name='Total Categories'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935471?rev=' id='TotalCategories' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='Total Categories' datatype='string' name='[Calculation_1090434110123847687]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Categories&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column-instance column='[Category]' derivation='CountD' name='[ctd:Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1090434110123847687]' derivation='None' name='[none:Calculation_1090434110123847687:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='120' />
+            <format attr='height' value='53' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110123847687:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[ctd:Category:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2E1E2318-6D88-451C-9BD5-5C8B15E77598}' />
+    </worksheet>
+    <worksheet name='Total Products'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935472?rev=' id='TotalProducts' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='Asin' datatype='string' name='[ASIN]' role='dimension' type='nominal' />
+            <column caption='Total Products' datatype='string' name='[Calculation_1090434110124195848]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Products&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column-instance column='[ASIN]' derivation='CountD' name='[ctd:ASIN:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1090434110124195848]' derivation='None' name='[none:Calculation_1090434110124195848:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='109' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='54' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110124195848:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[ctd:ASIN:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{85FEE9A6-4EA8-4D42-AA0B-1AA2C40ECE54}' />
+    </worksheet>
+    <worksheet name='Total Quantity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935468?rev=' id='TotalQuantity' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='Total Quantity1' datatype='string' name='[Calculation_1090434110122840067]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Quantity&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Qty]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1090434110122840067]' derivation='None' name='[none:Calculation_1090434110122840067:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Qty]' derivation='Sum' name='[sum:Qty:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='111' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='57' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110122840067:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AAABDBDB-447B-491E-9D12-AD9B4E99C5E3}' />
+    </worksheet>
+    <worksheet name='Total Sizes'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935470?rev=' id='TotalSizes' path='/workbooks/AmazonSalesIN' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+            <column caption='Total Sizes' datatype='string' name='[Calculation_1090434110123409413]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;Total Sizes&quot;' />
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Size]' role='dimension' type='nominal' />
+            <column-instance column='[Size]' derivation='CountD' name='[ctd:Size:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1090434110123409413]' derivation='None' name='[none:Calculation_1090434110123409413:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Category:nk]' />
+              <groupfilter function='member' level='[none:Category:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='85' />
+            <format attr='text-align' value='center' />
+            <format attr='height' value='50' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#ffaa00' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Calculation_1090434110123409413:nk]' />
+              <text column='[federated.1eswkut1k03ef3135ggns0cj4kmj].[ctd:Size:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{85E7BB7D-D32F-4264-9DA9-2580955A2F40}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <repository-location derived-from='https://localhost/workbooks/AmazonSalesIN/82935473?rev=' id='Dashboard1' path='/workbooks/AmazonSalesIN' revision='' />
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffaa00' />
+        </style-rule>
+      </style>
+      <size maxheight='1050' maxwidth='1850' sizing-mode='range' />
+      <datasources>
+        <datasource caption='Amazon Sale Report' name='federated.1eswkut1k03ef3135ggns0cj4kmj' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1eswkut1k03ef3135ggns0cj4kmj'>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+        <column-instance column='[Category]' derivation='None' name='[none:Category:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98216' id='40' param='horz' type-v2='layout-flow' w='98946' x='527' y='892'>
+            <zone h='98216' id='17' type-v2='layout-basic' w='98946' x='527' y='892'>
+              <zone h='49108' id='7' param='horz' type-v2='layout-flow' w='98946' x='527' y='50000'>
+                <zone h='49108' id='5' type-v2='layout-basic' w='98946' x='527' y='50000'>
+                  <zone h='49108' id='10' name='Quantity by size &amp; category' w='21015' x='78458' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49108' id='13' name='Top 10 states by Quantity&amp; Category - Ship service level' w='34322' x='23133' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49108' id='15' name='Quantity by Status &amp; Category' w='22606' x='527' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='49108' id='38' name='Map Qty by State' w='21003' x='57455' y='50000'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='37152' id='11' name='Amount by week &amp; category' w='27384' x='72089' y='12848'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='37152' id='16' name='Quantity by week &amp; category' w='31684' x='527' y='12848'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15217' id='22' name='Quantity by Sales channel &amp; Category' w='22139' x='49950' y='21330'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='13453' id='26' name='B2B Sales Quantity' w='22139' x='49950' y='36547'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='41' mode='dropdown' name='Map Qty by State' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' type-v2='filter' w='37564' x='32241' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8482' id='43' is-scaled='1' param='Image/amazon logo 2.PNG' type-v2='bitmap' w='39878' x='32211' y='12848'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='28670' id='21' name='Quantity by Courier Status &amp; Category' w='17739' x='32211' y='21330'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='60' name='Currency' show-title='false' w='9948' x='527' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='61' name='Total Quantity' show-title='false' w='9285' x='22956' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='62' name='Total Amount' show-title='false' w='12481' x='10475' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='63' name='Total Sizes' show-title='false' w='10009' x='69805' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='64' name='Total Categories' show-title='false' w='8262' x='91211' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11956' id='65' name='Total Products' show-title='false' w='11397' x='79814' y='892'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='6388' id='42' name='Map Qty by State' pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' show-title='false' type-v2='color' w='8908' x='69005' y='54588' />
+        <zone h='8711' id='44' type-v2='empty' w='181' x='7846' y='1394'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='8711' id='45' type-v2='empty' w='181' x='20519' y='1510'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='8711' id='46' type-v2='empty' w='181' x='77308' y='1510'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='8711' id='47' type-v2='empty' w='181' x='87568' y='1858'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+        <zone h='7782' id='48' is-scaled='1' param='Image/quantity logo.png' type-v2='bitmap' w='2535' x='20821' y='1045' />
+        <zone h='5459' id='49' is-scaled='1' param='Image/amount logo.png' type-v2='bitmap' w='2414' x='8509' y='2091' />
+        <zone h='6272' id='50' is-scaled='1' param='Image/products logo.png' type-v2='bitmap' w='1448' x='75377' y='1510' />
+        <zone h='6272' id='51' is-scaled='1' param='Image/size logo.png' type-v2='bitmap' w='1448' x='78395' y='2439' />
+        <zone h='5226' id='52' is-scaled='1' param='Image/categories logo.jpg.png' type-v2='bitmap' w='1992' x='88232' y='2671' />
+        <zone h='5575' id='57' is-scaled='1' param='Image/inr logo.png' type-v2='bitmap' w='1388' x='3018' y='2323' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='3750' minheight='3750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='67' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='66' param='vert' type-v2='layout-flow' w='99034' x='483' y='929'>
+                <zone fixed-size='117' h='11947' id='60' is-fixed='true' name='Currency' show-title='false' w='9957' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11947' id='62' is-fixed='true' name='Total Amount' show-title='false' w='12492' x='10440' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11947' id='61' is-fixed='true' name='Total Quantity' show-title='false' w='9294' x='22932' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11947' id='63' is-fixed='true' name='Total Sizes' show-title='false' w='10018' x='69823' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11947' id='65' is-fixed='true' name='Total Products' show-title='false' w='11407' x='79841' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='117' h='11947' id='64' is-fixed='true' name='Total Categories' show-title='false' w='8269' x='91248' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='82' h='7782' id='48' is-fixed='true' is-scaled='1' param='Image/quantity logo.png' type-v2='bitmap' w='2535' x='20821' y='1045'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='66' h='6272' id='50' is-fixed='true' is-scaled='1' param='Image/products logo.png' type-v2='bitmap' w='1448' x='75377' y='1510'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='57' h='5459' id='49' is-fixed='true' is-scaled='1' param='Image/amount logo.png' type-v2='bitmap' w='2414' x='8509' y='2091'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='59' h='5575' id='57' is-fixed='true' is-scaled='1' param='Image/inr logo.png' type-v2='bitmap' w='1388' x='3018' y='2323'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='65' h='6272' id='51' is-fixed='true' is-scaled='1' param='Image/size logo.png' type-v2='bitmap' w='1448' x='78395' y='2439'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='55' h='5226' id='52' is-fixed='true' is-scaled='1' param='Image/categories logo.jpg.png' type-v2='bitmap' w='1992' x='88232' y='2671'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37124' id='16' is-fixed='true' name='Quantity by week &amp; category' w='31713' x='483' y='12876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='81' h='8476' id='43' is-fixed='true' is-scaled='1' param='Image/amazon logo 2.PNG' type-v2='bitmap' w='39913' x='32196' y='12876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37124' id='11' is-fixed='true' name='Amount by week &amp; category' w='27408' x='72109' y='12876'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='28648' id='21' is-fixed='true' name='Quantity by Courier Status &amp; Category' w='17754' x='32196' y='21352'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='152' h='15206' id='22' is-fixed='true' name='Quantity by Sales channel &amp; Category' w='22159' x='49950' y='21352'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='13442' id='26' is-fixed='true' name='B2B Sales Quantity' w='22159' x='49950' y='36558'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49071' id='15' is-fixed='true' name='Quantity by Status &amp; Category' w='22627' x='483' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49071' id='13' is-fixed='true' name='Top 10 states by Quantity&amp; Category - Ship service level' w='34352' x='23110' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11947' id='41' mode='dropdown' name='Map Qty by State' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' type-v2='filter' w='37597' x='32226' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49071' id='38' is-fixed='true' name='Map Qty by State' w='21022' x='57462' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6388' id='42' name='Map Qty by State' pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' show-title='false' type-v2='color' w='8908' x='69005' y='54588'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49071' id='10' is-fixed='true' name='Quantity by size &amp; category' w='21033' x='78484' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EE578D35-2FA0-4E27-B6E1-FDCE53CBD582}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Map Qty by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FDDF120F-DB6F-4E87-8586-83C6DCF3E8E1}' />
+    </window>
+    <window class='worksheet' name='Quantity by week &amp; category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{868F362D-E9B1-43B6-9335-490C1F9D0468}' />
+    </window>
+    <window class='worksheet' name='Amount by week &amp; category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D4F17E70-D8B2-482B-9C85-D08BECC0827C}' />
+    </window>
+    <window class='worksheet' name='Quantity by size &amp; category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0B6B0BCC-FE99-40BB-8E7C-1E3E900D3175}' />
+    </window>
+    <window class='worksheet' name='Top 10 states by Quantity&amp; Category - Ship service level'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:ship-service-level:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{A7B08118-26CE-4868-93FE-D3C8AEA00E6F}' />
+    </window>
+    <window class='worksheet' name='Quantity by Status &amp; Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{248F23B9-5D77-44A2-A284-AB079970FAFE}' />
+    </window>
+    <window class='worksheet' name='Quantity by Courier Status &amp; Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Courier Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2D49E42-EC28-41A6-AB8D-FF8516FF691A}' />
+    </window>
+    <window class='worksheet' name='Quantity by Sales channel &amp; Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{52BE9A0D-442A-4945-A93A-5909195C4DFA}' />
+    </window>
+    <window class='worksheet' name='B2B Sales Quantity'>
+      <cards>
+        <edge name='left'>
+          <strip size='144'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[none:Category:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1eswkut1k03ef3135ggns0cj4kmj].[sum:Qty:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{E267DCF5-5A59-4DC0-A97F-46E40897FF03}' />
+    </window>
+    <window class='worksheet' name='Currency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0C99EE91-FF2E-45E6-AF30-0196607A781A}' />
+    </window>
+    <window class='worksheet' name='Total Quantity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F820904-11DB-4C08-8DA7-F8EE3823A7AB}' />
+    </window>
+    <window class='worksheet' name='Total Amount'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27C48A69-CE7E-4A68-8059-FC309FA27507}' />
+    </window>
+    <window class='worksheet' name='Total Sizes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{81D26E3E-779F-41DC-81D9-5DA69370C545}' />
+    </window>
+    <window class='worksheet' name='Total Categories'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AA1E700F-5F0D-4B1C-A419-AE5399FD83C0}' />
+    </window>
+    <window class='worksheet' name='Total Products'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4CB361B9-FCB4-43A0-9CCB-30CBF542B033}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Amount by week &amp; category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='B2B Sales Quantity'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Currency' />
+        <viewpoint name='Map Qty by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity by Courier Status &amp; Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity by Sales channel &amp; Category'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Quantity by Status &amp; Category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity by size &amp; category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Quantity by week &amp; category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 states by Quantity&amp; Category - Ship service level'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Amount' />
+        <viewpoint name='Total Categories' />
+        <viewpoint name='Total Products' />
+        <viewpoint name='Total Quantity' />
+        <viewpoint name='Total Sizes' />
+      </viewpoints>
+      <active id='64' />
+      <simple-id uuid='{7A5A5E73-394E-418E-8019-FE7D93303CBE}' />
+    </window>
+  </windows>
+</workbook>
